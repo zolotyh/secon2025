@@ -37,7 +37,7 @@
           const randomRotation = (Math.random() - 0.5) * 60; // -30 to 30 degrees
           const randomOffsetX = (Math.random() - 0.5) * 80; // -40 to 40 px
           const randomFallHeight = Math.random() * 100 + 120; // 120-220px
-          const randomDuration = Math.random() * 0.6 + 1.0; // 1.0-1.6s
+          const randomDuration = Math.random() * 0.1 + 0.3; // 1.0-1.6s
 
           // Устанавливаем начальное состояние
           span.style.opacity = "0";
@@ -71,7 +71,7 @@
             50 + index * 5,
           ); // Небольшая задержка между буквами
         });
-      }, 100);
+      }, 0);
     });
   }
 
@@ -123,7 +123,7 @@
             50 + index * 5,
           );
         });
-      }, 100);
+      }, 0);
     } else {
       createBrokenTextEffect();
     }
@@ -138,7 +138,7 @@
     if (hasTargetElements) {
       setTimeout(() => {
         initBrokenTextEffect();
-      }, 300);
+      }, 0);
     }
   }
 

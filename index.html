@@ -23,11 +23,50 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
+    <style>
+      .backgrounds {
+        counter-reset: section;
+      }
+      @keyframes fade-hold {
+        0% {
+          opacity: 0;
+        }
+        50% {
+          opacity: 0;
+        } /* reached by 0.3s */
+        100% {
+          opacity: 0.2;
+        } /* hold for the remaining 0.3s */
+      }
+      .counter .slide-background-content::after {
+        content: counter(section);
+        counter-increment: section;
+        color: #000;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 200vh;
+        font-family: serif;
+        font-weight: 900;
+        line-height: 100vh;
+        opacity: 0;
+      }
+      .counter.present .slide-background-content::after {
+        animation: fade-hold 2s ease-in;
+        opacity: 0.2;
+      }
+    </style>
   </head>
   <body>
     <div class="reveal">
       <div class="slides">
-        <section data-falling-text="100">
+        <section>
+          <h1 style="font-weight: 100" class="js-broken r-fit-text">
+            Алексей Золотых
+          </h1>
+        </section>
+        <section data-auto-animate>
           <div style="font-weight: 100; text-transform: uppercase">
             <div
               class="js-broken"
@@ -45,11 +84,101 @@
               class="js-broken"
               style="font-weight: 100; letter-spacing: 0.2em; font-size: 3.2em"
             >
-              в эпоху <span style="font-weight: 300">AI</span>
+              в эпоху <span>AI</span>
             </div>
           </div>
         </section>
-        <section>Slide 2</section>
+        <section
+          class="counter"
+          data-auto-animate
+          data-background-color="#2C2C2C"
+        >
+          <div
+            style="font-weight: 100; letter-spacing: 0.1em; font-size: 3.2em"
+          >
+            AI везде
+          </div>
+        </section>
+        <section
+          class="counter"
+          data-auto-animate
+          data-background-color="#2C2C2C"
+        >
+          <div
+            style="font-weight: 100; letter-spacing: 0.2em; font-size: 1.8em"
+          >
+            <span style="font-weight: 300">JS</span> медленный
+          </div>
+        </section>
+        <section
+          class="counter"
+          data-auto-animate
+          data-background-color="#2C2C2C"
+        >
+          <div
+            style="font-weight: 100; letter-spacing: 0.1em; font-size: 1.2em"
+          >
+            Typescript &mdash; стандарт
+          </div>
+        </section>
+        <section
+          class="counter"
+          data-auto-animate
+          data-background-color="#2C2C2C"
+        >
+          <div
+            style="font-weight: 100; letter-spacing: 0.1em; font-size: 1.2em"
+          >
+            Стандарты радуют
+          </div>
+        </section>
+        <section
+          class="counter"
+          data-auto-animate
+          data-background-color="#2C2C2C"
+        >
+          <div
+            style="font-weight: 100; letter-spacing: 0.1em; font-size: 1.2em"
+          >
+            A11y впереди
+          </div>
+        </section>
+        <section
+          class="counter"
+          data-auto-animate
+          data-background-color="#2C2C2C"
+        >
+          <div
+            style="font-weight: 100; letter-spacing: 0.1em; font-size: 1.2em"
+          >
+            Веб вытесняет десктоп
+          </div>
+        </section>
+        <section
+          class="counter"
+          data-auto-animate
+          data-background-color="#2C2C2C"
+        >
+          <div
+            style="font-weight: 100; letter-spacing: 0.1em; font-size: 1.2em"
+          >
+            React не радует
+          </div>
+        </section>
+        <section>
+          <blockquote
+            style="font-weight: 100; font-size: 0.6em; text-align: left"
+          >
+            В принципе, ты прав. Все, что способствует движению к предельной
+            сложности и ускоряет его, &mdash; это добро...
+            <br /><br />
+            А все, что мешает этому процессу или замедляет его &mdash;зло.
+            <br />
+            <br />
+            Такое определение добра и зла хорошо тем, что оно объективно и
+            универсально.
+          </blockquote>
+        </section>
       </div>
     </div>
 
