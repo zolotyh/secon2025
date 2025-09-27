@@ -160,6 +160,7 @@
             <li>Меньше контроля</li>
             <li>Больше кода</li>
             <li>Дыры в безопасности</li>
+            <li>Все заполонили чаты</li>
             <li>Не для всего</li>
           </ul>
         </section>
@@ -171,6 +172,10 @@
         </section>
         <section>
           <h2>Code Review</h2>
+        </section>
+        <section>
+          <h2>Можно быстро сделать самому</h2>
+          <p><a href="https://dev.to/pkorsch/gitlab-merge-review-with-ollama-automating-code-reviews-with-ai-python-2b6m">dev.to/pkorsch/gitlab-merge-review-with-ollama-automating-code-reviews-with-ai-python-2b6m</a></p>
         </section>
         <section>
       <table style="font-size: 0.4em; font-weight: 300">
@@ -256,13 +261,13 @@
             <li class="fragment">Webpack =&gt; RSPack
               <img src="img/rust.svg" alt="" style="max-height: 0.7em; vertical-align: middle">
             </li>
+            <li class="fragment">Parsel =&gt; Parsel
+              <img src="img/rust.svg" alt="" style="max-height: 0.7em; vertical-align: middle">
+            </li>
             <li class="fragment">Webpack =&gt; Turbopack
               <img src="img/rust.svg" alt="" style="max-height: 0.7em; vertical-align: middle">
             </li>
             <li class="fragment">Rollup =&gt; Rolldown
-              <img src="img/rust.svg" alt="" style="max-height: 0.7em; vertical-align: middle">
-            </li>
-            <li class="fragment">Parsel =&gt; Parsel
               <img src="img/rust.svg" alt="" style="max-height: 0.7em; vertical-align: middle">
             </li>
             <li class="fragment">Vite(Rollup) =&gt; Vite(Rolldown)&nbsp;<img src="img/rust.svg" alt="" style="max-height: 0.7em; vertical-align: middle">&nbsp;<img src="img/go.svg" alt="" style="max-height: 0.5em; vertical-align: middle"></li>
@@ -336,7 +341,159 @@
           <div
             style="font-weight: 100; letter-spacing: 0.1em; font-size: 1.2em"
           >
-            Стандарты радуют
+            Браузеры радуют
+          </div>
+        </section>
+        <section>
+          <h2>Браузеры все более консистентны</h2>
+          <p>https://wpt.fyi/interop-2025</p>
+        </section>
+        <section>
+          <img style="max-height: 80vh" src="./img/i.png" alt="">
+        </section>
+        <section>
+          <img style="max-height: 50vh" src="./img/i2024.png" alt="">
+        </section>
+        <section>
+          <img style="max-height: 50vh" src="./img/i2025.png" alt="">
+        </section>
+        <section>
+          <img style="max-height: 50vh" src="./img/i2025s.png" alt="">
+        </section>
+        <section>
+          Многое уже можно использовать
+        </section>
+        <section>
+          <h2>Baseline</h2>
+          <a href="https://web.dev/baseline">web.dev/baseline</a>
+        </section>
+        <section>
+          <h2>Baseline</h2>
+          <table style="font-size: 0.7em">
+            <tr>
+              <td>Newly available</td>
+              <td>The feature is supported by all of the core browsers, and is therefore interoperable</td>
+            </tr>
+            <tr>
+              <td>Widely available</td>
+              <td>30 months have passed since the newly interoperable date. The feature can be used by most sites without worrying about support</td>
+            </tr>
+          </table>
+        </section>
+        <section>
+          <img src="img/low.png" alt="">
+          <img class="fragment"src="img/limited.png" alt="">
+          <img class="fragment" src="img/high.png" alt="">
+        </section>
+        <section>
+          <img src="img/fig-1.png" alt="">
+        </section>
+        <section>
+          <h2>Инструменты</h2>
+          <ul>
+            <li>Eslint css/require-baseline</li>
+            <li>Browserlist</li>
+            <li>Visual Studio Code</li>
+          </ul>
+        </section>
+        <section>
+          <img src="img/2024.png" alt="">
+        </section>
+        <section
+          class="counter"
+          data-auto-animate
+          data-background-color="#2C2C2C"
+        >
+          <div
+            style="font-weight: 100; letter-spacing: 0.1em; font-size: 1.2em"
+          >
+            Фреймворки в целом затихли
+          </div>
+        </section>
+        <section>
+          React устал
+        </section>
+        <section>
+          Angular становится лучше
+        </section>
+        <section>
+          Vue пилит 4ю версию, но все еще переходят на 3
+        </section>
+        <section>
+          <h2>Восход performance-ориентированных фреймворков</h2>
+          <ul>
+            <li>Svelte/SvelteKit</li>
+            <li>SolidJS</li>
+            <li>Qwik</li>
+          </ul>
+        </section>
+        <section>
+          HTMX, Hotwire Turbo &mdash; хайп прошел
+        </section>
+        <section>
+          <h2>Astro и Islands Architecture</h2>
+        </section>
+        <section>
+          <h2>
+            Стейт
+          </h2>
+          <ul>
+            <li>Redux уступает место более простым решениям</li>
+            <li>Zustand как новый стандарт</li>
+            <li>TanStack Query (React Query) доминирует в хранении серверного состояния</li>
+            <li>React Context API</li>
+            <li>Опять RxJS</li>
+          </ul>
+        </section>
+        <section
+          class="counter"
+          data-auto-animate
+          data-background-color="#2C2C2C"
+        >
+          <div
+            style="font-weight: 100; letter-spacing: 0.1em; font-size: 1.2em"
+          >
+            Стандарты стабильно развиваются
+          </div>
+        </section>
+        <section>
+          <h2>Высокая производительность</h2>
+          <ul>
+            <li>WebAssembly</li>
+            <li>WebGPU</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Адаптивного дизайн</h2>
+          <ul>
+            <li>Контейнерные запросы (@container)</li>
+            <li>CSS-вложенность</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Новые парадигмы взаимодействия</h2>
+          <ul>
+            <li>WebXR и Extended Reality</li>
+            <li>Voice UIs и Conversational Interfaces</li>
+          </ul>
+        </section>
+        <section>
+          <h2>PWA 2.0</h2>
+          <p>Offline first подход</p>
+        </section>
+        <section>
+          <h2>Edge-computing и Serverless</h2>
+          <p>Выполнение функций вблизи пользователя</p>
+        </section>
+        <section
+          class="counter"
+          data-auto-animate
+          data-background-color="#2C2C2C"
+        >
+          <div
+            style="font-weight: 100; letter-spacing: 0.1em; font-size: 1.2em"
+          >
+            A11y first подход
           </div>
         </section>
         <section
@@ -347,7 +504,7 @@
           <div
             style="font-weight: 100; letter-spacing: 0.1em; font-size: 1.2em"
           >
-            A11y впереди
+            Веб вытесняет десктоп и WASM играет не последнюю роль
           </div>
         </section>
         <section
@@ -358,8 +515,21 @@
           <div
             style="font-weight: 100; letter-spacing: 0.1em; font-size: 1.2em"
           >
-            Веб вытесняет десктоп
+            В разработке больших продуктов все стабильно
           </div>
+        </section>
+        <section>
+          Микрофронтенды чуть стихли
+        </section>
+        <section>
+          <h2>Feature-Sliced Design</h2>
+          <ul>
+            <li class="fragment">Появление специализированного инструментариума (Генераторы «слайсов», Линтеры, Линтеры архитектуры)</li>
+            <li class="fragment">Интеграция с монорепозиториями</li>
+            <li class="fragment">Расширение слоёв и рекомендаций</li>
+            <li class="fragment">Укрепление комьюнити и образовательных ресурсов</li>
+            <li class="fragment">Больше скептиков</li>
+          </ul>
         </section>
         <section
           class="counter"
@@ -369,12 +539,12 @@
           <div
             style="font-weight: 100; letter-spacing: 0.1em; font-size: 1.2em"
           >
-            React не радует
+            Общее
           </div>
         </section>
         <section>
           <blockquote
-            style="font-weight: 100; font-size: 0.6em; text-align: left"
+            style="font-weight: 200; font-size: 0.6em; text-align: left"
           >
             В принципе, ты прав. Все, что способствует движению к предельной
             сложности и ускоряет его, &mdash; это добро...
@@ -385,6 +555,38 @@
             Такое определение добра и зла хорошо тем, что оно объективно и
             универсально.
           </blockquote>
+          <p style="font-size: 0.3em">Шантарам» (англ. Shantaram, маратхи शांताराम, «мирный человек») — роман 2003 года Грегори Дэвида Робертса</p>
+        </section>
+        <section>
+          <h1>Усложнение продолжается</h1>
+        </section>
+        <section>
+          <h2>Ваш код скорее всего устарел</h2>
+        </section>
+        <section>
+          <h2>ИИ круто, но подходит далеко не всегда</h2>
+        </section>
+        <section>
+          <h2>Жду веб-компоненты</h2>
+          <img src="img/wc.png" style="max-height: 50vh" alt="">
+          <p><a href="https://www.webcomponents.org/">www.webcomponents.org</a></p>
+        </section>
+        <section>
+          <h2>Спасибо!</h2>
+          
+          <table>
+            <tr>
+              <td style="text-align: center">
+                <p>слайды</p>
+                <img style="height: 30vh" src="img/qr.gif" alt="">
+              </td>
+              <td style="text-align: center">
+                <p>мой канал</p>
+                <img style="height: 30vh"  src="img/b.gif" alt="">
+              </td>
+            </tr>
+          </table>
+            <p>Алексей Золотых <a href="https://t.me/zolotyh">@zolotyh</a></p>
         </section>
       </div>
     </div>
