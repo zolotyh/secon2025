@@ -24,7 +24,7 @@
       rel="stylesheet"
     />
     <style>
-      .backgrounds {
+      body {
         counter-reset: section;
       }
       @keyframes fade-hold {
@@ -38,9 +38,11 @@
           opacity: 0.2;
         } /* hold for the remaining 0.3s */
       }
-      .counter .slide-background-content::after {
-        content: counter(section);
+      .counter  {
         counter-increment: section;
+      }
+      [data-counter]::after {
+        content: attr(data-counter);
         color: #000;
         position: absolute;
         top: 50%;
@@ -51,8 +53,6 @@
         font-weight: 900;
         line-height: 100vh;
         opacity: 0;
-      }
-      .counter.present .slide-background-content::after {
         animation: fade-hold 2s ease-in;
         opacity: 0.2;
       }
@@ -599,6 +599,7 @@
     ></script>
     <script src="dist/reveal.js"></script>
     <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/counter/index.js"></script>
     <script src="plugin/markdown/markdown.js"></script>
     <script src="plugin/highlight/highlight.js"></script>
     <script>
@@ -607,9 +608,21 @@
       // - https://revealjs.com/config/
       Reveal.initialize({
         hash: true,
+        counteract: {
+          counters: [{
+            name: 'mylist',
+            // selector: '.backgrounds .slide-background.counter .slide-background-content',
+            // increment: '.slides .counter',
+            selector: '.slides .counter',
+            reset: '.slides'
+          }]
+        },
 
         // Learn about plugins: https://revealjs.com/plugins/
-        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes, CounterAct],
+      });
+      Reveal.on('slidechanged', (event) => {
+        event.currentSlide.slideBackgroundContentElement.setAttribute("data-counter", event.currentSlide.dataset['countMylist'] ?? '')
       });
     </script>
     <script src="js/reveal-falling-text.js"></script>
