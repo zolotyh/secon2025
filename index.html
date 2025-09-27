@@ -31,7 +31,7 @@
         0% {
           opacity: 0;
         }
-        50% {
+        20% {
           opacity: 0;
         } /* reached by 0.3s */
         100% {
@@ -61,10 +61,40 @@
   <body>
     <div class="reveal">
       <div class="slides">
+        <section data-auto-animate>
+          <div style="font-weight: 100; text-transform: uppercase">
+            <div
+              class="js-broken"
+              style="font-weight: 100; letter-spacing: 0.44em; font-size: 3.4em"
+            >
+              Тренды
+            </div>
+            <div
+              class="js-broken"
+              style="font-weight: 600; letter-spacing: 0.3em; font-size: 1.1em"
+            >
+              во фронтенд разработке
+            </div>
+            <div
+              class="js-broken"
+              style="font-weight: 100; letter-spacing: 0.2em; font-size: 3.2em"
+            >
+              в эпоху <span>AI</span>
+            </div>
+          </div>
+        </section>
         <section>
-          <h1 style="font-weight: 100" class="js-broken r-fit-text">
-            Алексей Золотых
-          </h1>
+          <h2 style="font-weight: 100">
+          Алексей Золотых
+          </h2>
+          <ul style="font-weight: 100">
+            <li>Инженер</li>
+            <li>Тимлид</li>
+            <li>Спикер</li>
+          </ul>
+        </section>
+        <section>
+          <img style="height: 100vh" src="./img/logo.mo.svg" alt="МойОфис логотип">
         </section>
         <section data-auto-animate>
           <div style="font-weight: 100; text-transform: uppercase">
@@ -88,6 +118,12 @@
             </div>
           </div>
         </section>
+        <section>
+            <img style="max-height: 60vh" src="img/disk.png" alt="">
+        </section>
+        <section>
+            <img style="max-height: 60vh" src="img/disk2.png" alt="">
+        </section>
         <section
           class="counter"
           data-auto-animate
@@ -99,16 +135,170 @@
             AI везде
           </div>
         </section>
+        <section>
+          <h2>Генерация кода</h2>
+          <p style="font-weight: 100; margin-top: -.5em" class="js-broken">Вайб кодинг</p>
+        </section>
+        <section>
+          <h2>Генерация тестов</h2>
+          <ul>
+            <li>E2E</li>
+            <li>Unit</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Мне нравится</h2>
+          <ul class="fragment">
+            <li>Быстро</li>
+            <li>Можно не уметь или не знать</li>
+            <li>Современно</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Меня пугает</h2>
+          <ul class="fragment">
+            <li>Меньше контроля</li>
+            <li>Больше кода</li>
+            <li>Дыры в безопасности</li>
+            <li>Не для всего</li>
+          </ul>
+        </section>
+        <section>
+          <h2>AI-инструменты доступности</h2>
+        </section>
+        <section>
+<table style="font-size: .4em; font-weight: 300"> <thead> <tr> <th>Инструмент</th> <th>Бесплатно</th> <th>Использование AI</th> </tr> </thead> <tbody> <tr> <td><strong>axe DevTools</strong></td> <td>Бесплатная версия</td> <td>AI-анализ выявленных проблем доступности и фильтрация ложных срабатываний для повышения точности</td> </tr> <tr> <td><strong>BrowserStack Accessibility Testing</strong></td> <td>Бесплатный план</td> <td>AI-категоризация и ранжирование найденных нарушений, приоритизация рекомендаций по исправлению</td> </tr> <tr> <td><strong>accessScan (AccessiBe)</strong></td> <td>Бесплатно</td> <td>AI-сканирование содержимого страниц и автоматическая генерация отчётов с рекомендациями по ремедиации</td> </tr> <tr> <td><strong>Deque’s Advanced Rules</strong></td> <td>Open Source (axe-core)</td> <td>Machine vision для анализа визуальных элементов и AI-правила для расширенного покрытия тестирования</td> </tr> <tr> <td><strong>Equal Access AI (EA-AI)</strong></td> <td>Бесплатно</td> <td>AI-модели для проверки соответствия WCAG 2.2/3.0 и автоматической классификации нарушений</td> </tr> <tr> <td><strong>Accessibility Insights for Web (MS)</strong></td> <td>Open Source</td> <td>AI-анализ UI-элементов и FastPass-режим для автоматического выявления критических проблем</td> </tr> </tbody> </table>
+        </section>
+        <section>
+          <h2>Code Review</h2>
+        </section>
+        <section>
+      <table style="font-size: 0.4em; font-weight: 300">
+              <thead>
+                  <tr>
+                      <th>Инструмент</th>
+                      <th>Поддержка платформ</th>
+                      <th>Цена/Доступность</th>
+                      <th>Ссылка</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td>PR-Agent (от Qodo)</td>
+                      <td>GitHub, GitLab</td>
+                      <td>Бесплатно (open-source, Apache 2.0)</td>
+                      <td><a href="https://github.com/qodo-ai/pr-agent" target="_blank">github.com/qodo-ai/pr-agent</a></td>
+                  </tr>
+                  <tr>
+                      <td>AI-PR-Reviewer</td>
+                      <td>GitHub</td>
+                      <td>Бесплатно (open-source)</td>
+                      <td><a href="https://github.com/coderabbitai/ai-pr-reviewer" target="_blank">github.com/coderabbitai/ai-pr-reviewer</a></td>
+                  </tr>
+                  <tr>
+                      <td>AI-GitLab-Code-Review</td>
+                      <td>GitLab</td>
+                      <td>Бесплатно (open-source)</td>
+                      <td><a href="https://github.com/Evobaso-J/ai-gitlab-code-review" target="_blank">github.com/Evobaso-J/ai-gitlab-code-review</a></td>
+                  </tr>
+                  <tr>
+                      <td>Matter AI</td>
+                      <td>GitHub, GitLab, Bitbucket, Azure DevOps</td>
+                      <td>Бесплатно (open-source, с Docker/локальным setup)</td>
+                      <td><a href="https://github.com/GravityCloudAI/matter-ai" target="_blank">github.com/GravityCloudAI/matter-ai</a></td>
+                  </tr>
+                  <tr>
+                      <td>LLM Code Review Maven Plugin</td>
+                      <td>GitHub/GitLab via Maven CI</td>
+                      <td>Бесплатно (open-source)</td>
+                      <td><a href="https://github.com/QuasarByte/llm-code-review-maven-plugin" target="_blank">github.com/QuasarByte/llm-code-review-maven-plugin</a></td>
+                  </tr>
+                  <tr>
+                      <td>Continue.dev</td>
+                      <td>GitHub, GitLab, VS Code, JetBrains</td>
+                      <td>Бесплатно (open-source, Apache 2.0)</td>
+                      <td><a href="https://github.com/continuedev/continue" target="_blank">github.com/continuedev/continue</a></td>
+                  </tr>
+                  <tr>
+                      <td>OpenAI-Gitlab-PR-Review</td>
+                      <td>GitLab</td>
+                      <td>Бесплатно (open-source, требует OpenAI key)</td>
+                      <td><a href="https://github.com/nfacha/OpenAI-Gitlab-PR-Review" target="_blank">github.com/nfacha/OpenAI-Gitlab-PR-Review</a></td>
+                  </tr>
+              </tbody>
+          </table>
+        </section>
         <section
           class="counter"
           data-auto-animate
           data-background-color="#2C2C2C"
         >
           <div
-            style="font-weight: 100; letter-spacing: 0.2em; font-size: 1.8em"
+            style="font-weight: 100; font-size: 1.8em"
           >
             <span style="font-weight: 300">JS</span> медленный
           </div>
+        </section>
+        <section>
+          Все больше и больше вокруг Go и Rust
+        </section>
+        <section>
+          <h2>Бандлеры</h2>
+          <ul style="font-size: .7em; margin: 0; padding: 0; line-height: 1.2em; min-width: 60vw;">
+            <li class="fragment">Babel  =&gt; esbuild
+              <img src="img/go.svg" alt="" style="max-height: 0.5em; vertical-align: middle">
+            </li>
+            <li class="fragment">Babel  =&gt; swc 
+              <img src="img/rust.svg" alt="" style="max-height: 0.7em; vertical-align: middle">
+            </li>
+            <li class="fragment">Webpack =&gt; Vite(esbuild) 
+              <img src="img/go.svg" alt="" style="max-height: 0.5em; vertical-align: middle">
+            <li class="fragment">Webpack =&gt; RSPack
+              <img src="img/rust.svg" alt="" style="max-height: 0.7em; vertical-align: middle">
+            </li>
+            <li class="fragment">Webpack =&gt; Turbopack
+              <img src="img/rust.svg" alt="" style="max-height: 0.7em; vertical-align: middle">
+            </li>
+            <li class="fragment">Rollup =&gt; Rolldown
+              <img src="img/rust.svg" alt="" style="max-height: 0.7em; vertical-align: middle">
+            </li>
+            <li class="fragment">Parsel =&gt; Parsel
+              <img src="img/rust.svg" alt="" style="max-height: 0.7em; vertical-align: middle">
+            </li>
+            <li class="fragment">Vite(Rollup) =&gt; Vite(Rolldown)&nbsp;<img src="img/rust.svg" alt="" style="max-height: 0.7em; vertical-align: middle">&nbsp;<img src="img/go.svg" alt="" style="max-height: 0.5em; vertical-align: middle"></li>
+          </ul>
+        </section>
+        <section>
+          <h2>СSS</h2>
+          <ul style="font-size: .7em; margin: 0; padding: 0; line-height: 1.2em; min-width: 60vw;">
+            <li class="fragment">PostCSS  =&gt; PostCSS-RS
+              <img src="img/rust.svg" alt="" style="max-height: 0.7em; vertical-align: middle">
+            </li>
+            <li class="fragment">Tailwind  =&gt; Railwind
+              <img src="img/rust.svg" alt="" style="max-height: 0.7em; vertical-align: middle">
+            </li>
+            <li class="fragment">Tailwind  =&gt; tailwind_css
+              <img src="img/rust.svg" alt="" style="max-height: 0.7em; vertical-align: middle">
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2>Еще</h2>
+          <ul style="font-size: .7em; margin: 0; padding: 0; line-height: 1.2em; min-width: 60vw;">
+            <li class="fragment">Biome
+              <img src="img/rust.svg" alt="" style="max-height: 0.7em; vertical-align: middle">
+            </li>
+            <li class="fragment">Typescript
+              <img src="img/go.svg" alt="" style="max-height: 0.7em; vertical-align: middle">
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2>MoleculerJS</h2>
+          <ul>
+            <li>Moleculer Go</li>
+            <li>Moleculer Rust</li>
+          </ul>
         </section>
         <section
           class="counter"
@@ -120,6 +310,23 @@
           >
             Typescript &mdash; стандарт
           </div>
+        </section>
+        <section>
+          <h2>Анкеты</h2>
+          <ul style="font-size: 0.7em">
+            <li class="fragment">Stack Overflow Developer Survey 2025, <b>44%</b>  активно используют</li>
+            <li class="fragment">State of JavaScript 2024 <b>67%</b> больше TS, чем JS</li>
+            <li class="fragment">State of Frontend 2024 <b>90,6%</b> разработчиков работают с TypeScript</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Github</h2>
+          <p>На 2м месте после python</p>
+        </section>
+        <section>
+          <h2>Поддержка в NodeJS</h2>
+          <pre data-trim><code>node --experimental-strip-types example.ts</code></pre>
+          <p class="fragment" style="font-weight: 600; font-size: 2em">;(</p>
         </section>
         <section
           class="counter"

@@ -56,7 +56,7 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   font-family: var(--r-main-font);
   font-size: var(--r-main-font-size);
   font-optical-sizing: auto;
-  font-weight: normal;
+  font-weight: 200;
   color: var(--r-main-color);
 }
 
